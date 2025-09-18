@@ -1,0 +1,95 @@
+2025-09-16 18:30:33,429 - INFO -Ingesting begin_inventory.csv in db
+2025-09-16 18:30:36,291 - INFO -Ingesting end_inventory.csv in db
+2025-09-16 18:30:46,105 - INFO -Ingesting purchases.csv in db
+2025-09-16 18:31:44,188 - INFO -Ingesting purchase_prices.csv in db
+2025-09-16 18:31:51,263 - INFO -Ingesting sales_1.csv in db
+2025-09-16 18:32:35,333 - INFO -Ingesting sales_2.csv in db
+2025-09-16 18:33:17,760 - INFO -Ingesting sales_3.csv in db
+2025-09-16 18:34:00,337 - INFO -Ingesting sales_4.csv in db
+2025-09-16 18:34:41,251 - INFO -Ingesting sales_5.csv in db
+2025-09-16 18:35:24,226 - INFO -Ingesting sales_6.csv in db
+2025-09-16 18:36:01,957 - INFO -Ingesting sales_7.csv in db
+2025-09-16 18:36:16,844 - INFO -Ingesting vendor_invoice.csv in db
+2025-09-16 18:36:17,068 - INFO -Ingestion Complete
+2025-09-16 18:36:17,096 - INFO -
+Total Time Taken: 5.734272833665212 minutes
+2025-09-17 16:58:03,853 - INFO -Creating Vendor Summary Table....
+2025-09-17 16:59:51,480 - INFO -   VendorNumber                   VendorName  ...  TotalExciseTax FreightCost
+0          1128  BROWN-FORMAN CORP            ...       260999.20    68601.68
+1          4425        MARTIGNETTI COMPANIES  ...       294438.66   144929.24
+2         17035  PERNOD RICARD USA            ...       343854.07   123780.22
+3          3960  DIAGEO NORTH AMERICA INC     ...       368242.80   257032.07
+4          3960  DIAGEO NORTH AMERICA INC     ...       249587.83   257032.07
+
+[5 rows x 14 columns]
+2025-09-17 16:59:51,568 - INFO -Cleaning Data....
+2025-09-17 16:59:51,584 - INFO -   VendorNumber  ... SalesToPurchaseRatio
+0          1128  ...             1.338647
+1          4425  ...             1.266830
+2         17035  ...             1.327594
+3          3960  ...             1.372493
+4          3960  ...             1.396897
+
+[5 rows x 18 columns]
+2025-09-17 16:59:51,603 - INFO -Tngesting data....
+2025-09-17 16:59:51,698 - INFO -Complete
+2025-09-17 17:06:23,958 - INFO -Creating Vendor Summary Table....
+2025-09-17 17:06:57,103 - INFO -   VendorNumber                   VendorName  ...  TotalExciseTax FreightCost
+0          1128  BROWN-FORMAN CORP            ...       260999.20    68601.68
+1          4425        MARTIGNETTI COMPANIES  ...       294438.66   144929.24
+2         17035  PERNOD RICARD USA            ...       343854.07   123780.22
+3          3960  DIAGEO NORTH AMERICA INC     ...       368242.80   257032.07
+4          3960  DIAGEO NORTH AMERICA INC     ...       249587.83   257032.07
+
+[5 rows x 14 columns]
+2025-09-17 17:06:57,143 - INFO -Cleaning Data....
+2025-09-17 17:06:57,154 - INFO -   VendorNumber  ... SalesToPurchaseRatio
+0          1128  ...             1.338647
+1          4425  ...             1.266830
+2         17035  ...             1.327594
+3          3960  ...             1.372493
+4          3960  ...             1.396897
+
+[5 rows x 18 columns]
+2025-09-17 17:06:57,169 - INFO -Tngesting data....
+2025-09-17 17:06:57,318 - INFO -Complete
+2025-09-17 17:29:19,324 - INFO -Creating Vendor Summary Table....
+2025-09-17 17:30:34,812 - INFO -   VendorNumber                   VendorName  Brand              Description  PurchasePrice  ActualPrice  ... TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  TotalSalesPrice  TotalExciseTax  FreightCost
+0          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black          26.27        36.99  ...           3811251.60            142049.0         5101919.51        672819.31       260999.20     68601.68
+1          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka          23.19        28.99  ...           3804041.22            160247.0         4819073.49        561512.37       294438.66    144929.24
+2         17035  PERNOD RICARD USA             8068         Absolut 80 Proof          18.24        24.99  ...           3418303.68            187140.0         4538120.60        461140.15       343854.07    123780.22
+3          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum          16.17        22.99  ...           3261197.94            200412.0         4475972.88        420050.01       368242.80    257032.07
+4          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka          21.89        29.99  ...           3023206.01            135838.0         4223107.62        545778.28       249587.83    257032.07
+
+[5 rows x 14 columns]
+2025-09-17 17:30:34,860 - INFO -Cleaning Data....
+2025-09-17 17:30:34,873 - INFO -   VendorNumber                VendorName  Brand              Description  PurchasePrice  ActualPrice  ...  TotalExciseTax  FreightCost  GrossProfit  ProfitMargin  StockTurnover  SalesToPurchaseRatio
+0          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black          26.27        36.99  ...       260999.20     68601.68   1290667.91     25.297693       0.979108              1.338647
+1          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka          23.19        28.99  ...       294438.66    144929.24   1015032.27     21.062810       0.976890              1.266830
+2         17035         PERNOD RICARD USA   8068         Absolut 80 Proof          18.24        24.99  ...       343854.07    123780.22   1119816.92     24.675786       0.998575              1.327594
+3          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum          16.17        22.99  ...       368242.80    257032.07   1214774.94     27.139908       0.993703              1.372493
+4          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka          21.89        29.99  ...       249587.83    257032.07   1199901.61     28.412764       0.983556              1.396897
+
+[5 rows x 18 columns]
+2025-09-17 17:30:34,890 - INFO -Tngesting data....
+2025-09-17 17:30:34,982 - INFO -Complete
+2025-09-17 17:38:27,899 - INFO -Creating Vendor Summary Table....
+2025-09-17 17:39:08,302 - INFO -   VendorNumber                   VendorName  ...  TotalExciseTax FreightCost
+0          1128  BROWN-FORMAN CORP            ...       260999.20    68601.68
+1          4425        MARTIGNETTI COMPANIES  ...       294438.66   144929.24
+2         17035  PERNOD RICARD USA            ...       343854.07   123780.22
+3          3960  DIAGEO NORTH AMERICA INC     ...       368242.80   257032.07
+4          3960  DIAGEO NORTH AMERICA INC     ...       249587.83   257032.07
+
+[5 rows x 14 columns]
+2025-09-17 17:39:08,343 - INFO -Cleaning Data....
+2025-09-17 17:39:08,351 - INFO -   VendorNumber  ... SalesToPurchaseRatio
+0          1128  ...             1.338647
+1          4425  ...             1.266830
+2         17035  ...             1.327594
+3          3960  ...             1.372493
+4          3960  ...             1.396897
+
+[5 rows x 18 columns]
+2025-09-17 17:39:08,364 - INFO -Tngesting data....
+2025-09-17 17:39:08,431 - INFO -Complete
