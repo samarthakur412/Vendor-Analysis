@@ -1,6 +1,9 @@
 # Vendor Analysis
 📌 Overview
 
+<img width="502" height="299" alt="BI dashboard" src="https://github.com/user-attachments/assets/f1b4e60e-1f51-4916-bf29-5a4fbc81ac04" />
+
+
 This is an end-to-end Data Science project focused on vendor analysis. The project covers the full lifecycle of a data science workflow:
 
 Ingesting raw vendor data into a database
